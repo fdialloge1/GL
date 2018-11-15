@@ -1,16 +1,26 @@
-//  Copyright (c) 2018 Antoine Tran Tan
-//
 
-#include "my_header.h"
-#include "TP_lib.h"
 
-int main(void)
+						 
+						 
+//4
+
+int main (void )
 {
-short resultat, i=0;
-while(i<10)
-{
-	resultat=LancerDe();
-	i++;
-}
-    return 0;
-}
+	int n=0,S4=0,a=0;
+	
+	while (a<50&& n<20)
+	{
+		if(a%3==0 || a%7==0)
+		{
+		S4=S4+a;
+		n=n+1;
+		}
+		a++;
+	}
+}	
+				 
+						 
+
+
+
+
