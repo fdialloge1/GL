@@ -13,7 +13,7 @@ int main(void)
 
 	exo1();
 	exo2();
-    return 0;
+	exo3();
 } 
 
 int exo1(void)
@@ -32,7 +32,7 @@ int exo1(void)
 		bin[i]=1;
 	}
 	}
-	
+	  return 0;
 }
 
 int exo2(void)
