@@ -3,28 +3,40 @@
 
 #include "my_header.h"
 #include "TP_lib_suite.h"
-int main(void)
 
-{
-	unsigned char succes;
-	unsigned char i,i2;
-	unsigned char comb_gagn[6]={1,45,8,16,20,33};
-	unsigned char comb_joeur[6]={46,48,36,8,1,20};
+
+
+int main(void) 
+{   
+	unsigned char succes=0,score[100],score_max=0;
+	unsigned char i,i2,j;
+	unsigned short comb_gagn[6]={16,1,6,33,45,8};
+	unsigned char comb_joueur[6]={46,48,36,8,1,20};
 	
-	for(i=0,i<6,i++)
+	for(i=0;i<100;i++)
 	{
-	 for(i2=0,i<6,i++)
+	 for(i2=0;i2<6;i2++)
 	 {
-		 if(comb_joueur[i]=comb_gagn[i])
+		 comb_gagn[i2]=tirerNumero();
+		 if(comb_joueur[i2]==comb_gagn[i2])
 		 {
-			succes=1 
+			succes++; 
 		 }
 		 else
-		 {succes=0}
+		 {succes=succes;}
 	 }
+	 score[i]=succes;
+	    if(score[1]<score[i])
+		{score_max=score[i];}
+		else
+		{score_max=score[1];}
+	 
+	
 	}
-	
-	
-	
-    return 0;
+	return score_max;
 }
+
+	
+
+	
+
